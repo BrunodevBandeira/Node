@@ -2,7 +2,7 @@ const express = require("express");
 const UserModel = require('../src/models/user.model');
 
 const app = express();
-app.use(express.json()); //Reconhece que vamos sempre usar JS nas requisições 
+app.use(express.json()); //Reconhece que vamos sempre usar JS nas requisições   
 
 app.get("./home", (req, res) => {
     res.contentType("application/html");
